@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+#upper{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* padding: 10px 10px; */
+    /* margin-right: 10px; */
+}
+
+#upper img{
+    width: 15%;
+}
+
+#upper a>h4{
+    color: black;
+}
+
+#search{
+   width: 40%;
+   height: 30%;
+   padding: 10px;
+   margin-top: 20px;
+}
+
+#lower{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+    
+    justify-content: center;
+    margin: auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#lower p{
+    margin: 20px;
+    position: relative;
+}
+
+#women_drop{
+    position:absolute;
+    background-color: white;
+    display: none;
+}
+
+#women:hover a{
+    display: block;
+}
+
+/* ------------------------------------------BOX1--------------------------------------- */
+#body1{
+    border: 2px green solid;
+    padding-top: 20px;
+    width: 70%;
+    margin: auto;
+}
+#box1{
+    display: flex;
+    justify-content: space-around;
+      
+}
+
+#left1{
+    padding-left: 30px;
+    padding-bottom: 20px;
+    width: 60%;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#right1{
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+#right1 img{
+      width: 100%;
+}
+
+.left1_mid{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+#left1>div:nth-child(3){
+    width: 60%;
+    justify-content: space-evenly;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    background: rgb(244, 51, 151);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: white;
+}
+
+/* ---------------------------------------TOP_CAT------------------------------------------ */
+.topcategory{
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.topcategory div:nth-child(1){
+   
+    width: 22%;
+    height: 1px;
+    background: rgb(247, 168, 202);
+}
+
+.topcategory div:nth-child(3){
+    
+    width: 22%;
+    height: 1px;
+    background: rgb(247, 168, 202);
+}
+.topcategory span{
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+}
+/* ---------------------------------------BOX2------------------------------------------ */
+
+#box2{
+
+    margin-top: 60px;
+    
+    display: flex;
+    margin: 48px 0px 60px;
+    background-image: url(https://images.meesho.com/images/marketing/1680091595756.webp);
+    /* flex-direction: row; */
+    /* -webkit-box-pack: start; */
+    /* justify-content: flex-start; */
+    /* align-items: flex-end; */
+    padding: 20px 24px 22px;
+    height: 500px;
+    border-radius: 4px;
+    background-size: 100% 100%;
+}
+
+#left2{
+    width: 40%;
+
+}
+
+#right2{
+    display: flex;  
+    width: 60%;
+    
+    
+}
+
+#left2 img{
+    margin-top: 60px;
+width: 100%;
+}
+
+#rigth2 img{
+    margin-left: 30px;
+    margin-top: 180px;
+    width: 40%;
+}
+
+/* ---------------------------------------BOX3------------------------------------------ */
+
+#box3{
+    display: flex;
+    margin-bottom: 60px;
+    height: 546px;
+    width: 100%;
+    background-image: url(https://images.meesho.com/images/marketing/1680091656896.webp);
+    background-size: 100% 100%;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 24px 0px 28px;
+    border-radius: 4px;
+}
+
+#left3{
+width: 30%;
+display: flex;
+justify-content: center;
+
+}
+#right3{
+width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+
+#right3>div{
+    margin-left: 10px;
+    width: 30%;
+    margin-right: 10px;
+}
+
+#right3 img:nth-child(2){
+    width: 200px;
+}
+#right3 img:nth-child(1){
+    width: 180px;
+}
+
+/* ------------------------------------------BOX4--------------------------------------- */
+
+#box4{
+    display: flex;
+    margin-bottom: 60px;
+    height: 546px;
+    width: 100%;
+    background-image: url(https://images.meesho.com/images/marketing/1680091855132.jpg);
+    background-size: 100% 100%;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 24px 0px 28px;
+    border-radius: 4px;
+}
+
+#right4{
+    display: flex;
+}
