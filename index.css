@@ -10,6 +10,16 @@ body{
     text-align: left;
 }
 
+
+/* ------------------------------------------Header--------------------------------------- */
+
+/* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  } */
+
+
 #upper{
     width: 100%;
     display: flex;
@@ -48,25 +58,51 @@ body{
 #lower p{
     margin: 20px;
     position: relative;
+   
+
 }
 
-#women_drop{
+.women_drop{
     position:absolute;
-    background-color: white;
+    background-color: rgb(247, 180, 180);
     display: none;
+    padding: 15px;
+    border-radius: 0px 0px 10px 10px;
+   
+   
 }
 
-#women:hover a{
-    display: block;
+.women_drop a{
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
 }
 
-/* ------------------------------------------BOX1--------------------------------------- */
+.women_drop a:hover{
+    background-color:  rgb(255, 97, 97);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#women:hover .women_drop{
+    display: flex;
+    flex-direction: column;
+}
+
+#lower>div:hover p{
+color: rgb(255, 97, 97);
+text-decoration: underline;
+}
+
+/* ------------------------------------------BODY1--------------------------------------- */
 #body1{
-    border: 2px green solid;
+    /* border: 2px green solid; */
     padding-top: 20px;
     width: 70%;
     margin: auto;
 }
+
+/* ------------------------------------------BOX1--------------------------------------- */
 #box1{
     display: flex;
     justify-content: space-around;
@@ -95,6 +131,7 @@ body{
 }
 
 .left1_mid{
+    
     padding-top: 10px;
     padding-bottom: 20px;
     width: 90%;
@@ -102,6 +139,12 @@ body{
     display: flex;
     justify-content: space-around;
 }
+
+.left1_mid span{
+    padding-right: 5px;
+  border-right: 2px solid  rgb(244, 51, 151); 
+}
+
 #left1>div:nth-child(3){
     width: 60%;
     justify-content: space-evenly;
@@ -255,7 +298,274 @@ width: 70%;
     padding: 0px 24px 0px 28px;
     border-radius: 4px;
 }
-
-#right4{
+#left4{
+    width: 30%;
     display: flex;
-}
+    justify-content: center;
+    
+    }
+    #right4{
+    width: 70%;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 20px;
+    }
+    
+    #right4>div{
+        margin-left: 10px;
+        width: 30%;
+        margin-right: 10px;
+    }
+    
+    #right4 img:nth-child(2){
+        width: 200px;
+    }
+    #right4 img:nth-child(1){
+        width: 180px;
+    }
+
+/* ------------------------------------------BOX5--------------------------------------- */
+    #box5{
+        display: flex;
+        margin-bottom: 60px;
+        height: 406px;
+        width: 100%;
+       background-image: url(https://images.meesho.com/images/pow/downloadBannerDesktop.webp);
+        background-size: 100% 100%;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 24px 0px 28px;
+    border-radius: 4px;
+
+    }
+
+    #box5 h4{
+        color: rgb(85, 133, 248);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        font-family: "Mier bold";
+        margin: 0px 0px 16px;
+        padding: 0px;
+    }
+
+    #box5 h1{
+        color: rgb(244, 51, 151);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
+    font-family: "Mier bold";
+    margin: 0px;
+    padding: 0px;
+    }
+
+    #box5 div{
+        
+        margin-left: 30%;
+        /* border: 2px red solid; */
+        width: 70%;
+       text-align: right;
+       align-content: flex-end;
+    }
+
+
+
+   
+    #box6{
+        display: flex;
+        margin-bottom: 60px;
+        height: 300px;
+        width: 100%;
+       background-image: url( https://images.meesho.com/images/pow/supplyBannerDesktop.webp);
+        background-size: 100% 100%;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 24px 0px 28px;
+    border-radius: 4px;
+ 
+    }
+
+    #box6 div{
+        width: 80%;
+    }
+
+    .box6_span{
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        color: white;
+        margin-bottom: 10px;
+    }
+    #box6 div p{
+        margin-bottom: 30px;
+        font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-top: 16px;
+    color: white;
+    }
+    #box6 div>div{
+        display: flex;
+        
+        color: white;
+        justify-content: space-between;
+        font-weight: 400;
+        font-size: 23px;
+    }
+   
+    #box6 div>div span{
+        padding-left: 5px;
+        border-right: 1px solid rgb(255, 255, 255);
+    }
+
+    #box6 div>div span:last-child{
+        border-right: none;
+    }
+
+
+    /* ------------------------------------------BODY2--------------------------------------- */
+
+    #product{
+        border: 3px red solid;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-row: auto;
+        gap: 15px;
+        padding: 10px;
+        background-color: rgb(231, 231, 231);
+
+    }
+
+    #product div {
+        background-color: white;
+      border-radius: 10px;
+      text-align: center;
+      padding-bottom: 10px;
+      
+    }
+
+    #product div:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    #product div>img{
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+    }
+
+
+        /* ------------------------------------------Footer--------------------------------------- */
+
+
+    #footer{
+        margin: 0px;
+        background-color: rgb(249, 249, 249);
+
+        margin-top: 30px;
+        
+    }
+    #footer>div{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+
+    .foot1{
+        width: 35%;
+    }
+    .foot1>img{
+        width: 40%;
+        margin-top: 40px;
+    }
+
+    .foot1>h4{
+        color: rgb(51, 51, 51);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    font-family: "Mier bold";
+    margin: 0px;
+    padding: 0px;
+    
+    }
+
+    .foot1>p{
+        color: rgb(102, 102, 102);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: "Mier book";
+    margin: 0px;
+    padding: 0px;
+    margin-top: 40px;
+    }
+
+    .foot2{
+        width: 18%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .foot2 p{
+        color: rgb(102, 102, 102);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: "Mier demi";
+    margin: 0px;
+    padding: 0px;
+    margin-top: 10px;
+    }
+
+
+    .foot3{
+        width: 18%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .foot3 p{
+        color: rgb(102, 102, 102);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: "Mier demi";
+    margin: 0px;
+    padding: 0px;
+    margin-top: 10px;
+    }
+
+    .foot4 h6{
+        color: rgb(51, 51, 51);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        font-family: "Mier bold";
+        margin: 0px;
+        padding: 0px;
+    }
+
+     .foot4{
+        width: 18%;
+        margin-top: 20px;
+       
+    }
+
+    .foot4 img{
+        margin-top: 40px;
+    } 
