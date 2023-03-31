@@ -13,12 +13,20 @@ body{
 
 /* ------------------------------------------Header--------------------------------------- */
 
-/* .sticky {
-    position: fixed;
+ /* .sticky {
+    position: sticky;
     top: 0;
     width: 100%;
-  } */
+    z-index: 100;
+  }  */
 
+  #header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+  }
 
 #upper{
     width: 100%;
@@ -89,6 +97,201 @@ body{
     flex-direction: column;
 }
 
+
+.men_drop{
+    position:absolute;
+    background-color: rgb(247, 180, 180);
+    display: none;
+    padding: 15px;
+    border-radius: 0px 0px 10px 10px;
+   
+   
+}
+
+.men_drop a{
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+}
+
+.men_drop a:hover{
+    background-color:  rgb(255, 97, 97);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#men:hover .men_drop{
+    display: flex;
+    flex-direction: column;
+}
+
+.kid_drop{
+    position:absolute;
+    background-color: rgb(247, 180, 180);
+    display: none;
+    padding: 15px;
+    border-radius: 0px 0px 10px 10px;
+   
+   
+}
+
+.kid_drop a{
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+}
+
+.kid_drop a:hover{
+    background-color:  rgb(255, 97, 97);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#kid:hover .kid_drop{
+    display: flex;
+    flex-direction: column;
+}
+
+.HK_drop{
+    position:absolute;
+    background-color: rgb(247, 180, 180);
+    display: none;
+    padding: 15px;
+    border-radius: 0px 0px 10px 10px;
+   
+   
+}
+
+.HK_drop a{
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+}
+
+.HK_drop a:hover{
+    background-color:  rgb(255, 97, 97);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#HK:hover .HK_drop{
+    display: flex;
+    flex-direction: column;
+}
+
+.BH_drop{
+    position:absolute;
+    background-color: rgb(247, 180, 180);
+    display: none;
+    padding: 15px;
+    border-radius: 0px 0px 10px 10px;
+   
+   
+}
+
+.BH_drop a{
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+}
+
+.BH_drop a:hover{
+    background-color:  rgb(255, 97, 97);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#BH:hover .BH_drop{
+    display: flex;
+    flex-direction: column;
+}
+
+.JA_drop{
+    position:absolute;
+    background-color: rgb(247, 180, 180);
+    display: none;
+    padding: 15px;
+    
+    border-radius: 0px 0px 10px 10px;
+   
+   
+}
+
+.JA_drop a{
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+}
+
+.JA_drop a:hover{
+    background-color:  rgb(255, 97, 97);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#JA:hover .JA_drop{
+    display: flex;
+    flex-direction: column;
+}
+
+.BF_drop{
+    position:absolute;
+    background-color: rgb(247, 180, 180);
+    display: none;
+    padding: 15px;
+    
+    border-radius: 0px 0px 10px 10px;
+   
+   
+}
+
+.BF_drop a{
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+}
+
+.BF_drop a:hover{
+    background-color:  rgb(255, 97, 97);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#BF:hover .BF_drop{
+    display: flex;
+    flex-direction: column;
+}
+
+.electric_drop{
+    position:absolute;
+    background-color: rgb(247, 180, 180);
+    display: none;
+    padding: 15px;
+    
+    border-radius: 0px 0px 10px 10px;
+   
+   
+}
+
+.electric_drop a{
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+}
+
+.electric_drop a:hover{
+    background-color:  rgb(255, 97, 97);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#electric:hover .electric_drop{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 #lower>div:hover p{
 color: rgb(255, 97, 97);
 text-decoration: underline;
@@ -100,6 +303,7 @@ text-decoration: underline;
     padding-top: 20px;
     width: 70%;
     margin: auto;
+   
 }
 
 /* ------------------------------------------BOX1--------------------------------------- */
@@ -374,8 +578,9 @@ width: 70%;
     }
 
 
-
+/* ------------------------------------------BOX6--------------------------------------- */
    
+
     #box6{
         display: flex;
         margin-bottom: 60px;
@@ -431,16 +636,16 @@ width: 70%;
     }
 
 
-    /* ------------------------------------------BODY2--------------------------------------- */
+    /* ------------------------------------------BODY2-Product--------------------------------------- */
 
     #product{
-        border: 3px red solid;
+        /* border: 3px red solid; */
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-row: auto;
         gap: 15px;
         padding: 10px;
-        background-color: rgb(231, 231, 231);
+        /* background-color: rgb(231, 231, 231); */
 
     }
 
@@ -449,7 +654,7 @@ width: 70%;
       border-radius: 10px;
       text-align: center;
       padding-bottom: 10px;
-      
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     }
 
     #product div:hover{
@@ -468,8 +673,8 @@ width: 70%;
     #footer{
         margin: 0px;
         background-color: rgb(249, 249, 249);
-
-        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-top: 50px;
         
     }
     #footer>div{
