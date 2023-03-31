@@ -1,0 +1,286 @@
+#header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+  }
+
+#upper{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* padding: 10px 10px; */
+    /* margin-right: 10px; */
+}
+
+#upper img{
+    width: 15%;
+}
+
+#upper a>h4{
+    color: black;
+}
+
+#search{
+    width: 40%;
+    height: 30%;
+    padding: 10px;
+    margin-top: 20px;
+ }
+ 
+ #lower{
+     width: 100%;
+     display: flex;
+     /* justify-content: space-around; */
+     
+     justify-content: center;
+     margin: auto;
+     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ }
+ 
+ #lower p{
+     margin: 20px;
+     position: relative;
+    
+ 
+ }
+ 
+ .women_drop{
+     position:absolute;
+     background-color: rgb(247, 180, 180);
+     display: none;
+     padding: 15px;
+     border-radius: 0px 0px 10px 10px;
+    
+    
+ }
+ 
+ .women_drop a{
+     text-decoration: none;
+     color: black;
+     margin-top: 5px;
+ }
+ 
+ .women_drop a:hover{
+     background-color:  rgb(255, 97, 97);
+     border-radius: 5px;
+     padding: 5px;
+ }
+ 
+ #women:hover .women_drop{
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ 
+ .men_drop{
+     position:absolute;
+     background-color: rgb(247, 180, 180);
+     display: none;
+     padding: 15px;
+     border-radius: 0px 0px 10px 10px;
+    
+    
+ }
+ 
+ .men_drop a{
+     text-decoration: none;
+     color: black;
+     margin-top: 5px;
+ }
+ 
+ .men_drop a:hover{
+     background-color:  rgb(255, 97, 97);
+     border-radius: 5px;
+     padding: 5px;
+ }
+ 
+ #men:hover .men_drop{
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .kid_drop{
+     position:absolute;
+     background-color: rgb(247, 180, 180);
+     display: none;
+     padding: 15px;
+     border-radius: 0px 0px 10px 10px;
+    
+    
+ }
+ 
+ .kid_drop a{
+     text-decoration: none;
+     color: black;
+     margin-top: 5px;
+ }
+ 
+ .kid_drop a:hover{
+     background-color:  rgb(255, 97, 97);
+     border-radius: 5px;
+     padding: 5px;
+ }
+ 
+ #kid:hover .kid_drop{
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .HK_drop{
+     position:absolute;
+     background-color: rgb(247, 180, 180);
+     display: none;
+     padding: 15px;
+     border-radius: 0px 0px 10px 10px;
+    
+    
+ }
+ 
+ .HK_drop a{
+     text-decoration: none;
+     color: black;
+     margin-top: 5px;
+ }
+ 
+ .HK_drop a:hover{
+     background-color:  rgb(255, 97, 97);
+     border-radius: 5px;
+     padding: 5px;
+ }
+ 
+ #HK:hover .HK_drop{
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .BH_drop{
+     position:absolute;
+     background-color: rgb(247, 180, 180);
+     display: none;
+     padding: 15px;
+     border-radius: 0px 0px 10px 10px;
+    
+    
+ }
+ 
+ .BH_drop a{
+     text-decoration: none;
+     color: black;
+     margin-top: 5px;
+ }
+ 
+ .BH_drop a:hover{
+     background-color:  rgb(255, 97, 97);
+     border-radius: 5px;
+     padding: 5px;
+ }
+ 
+ #BH:hover .BH_drop{
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .JA_drop{
+     position:absolute;
+     background-color: rgb(247, 180, 180);
+     display: none;
+     padding: 15px;
+     
+     border-radius: 0px 0px 10px 10px;
+    
+    
+ }
+ 
+ .JA_drop a{
+     text-decoration: none;
+     color: black;
+     margin-top: 5px;
+ }
+ 
+ .JA_drop a:hover{
+     background-color:  rgb(255, 97, 97);
+     border-radius: 5px;
+     padding: 5px;
+ }
+ 
+ #JA:hover .JA_drop{
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .BF_drop{
+     position:absolute;
+     background-color: rgb(247, 180, 180);
+     display: none;
+     padding: 15px;
+     
+     border-radius: 0px 0px 10px 10px;
+    
+    
+ }
+ 
+ .BF_drop a{
+     text-decoration: none;
+     color: black;
+     margin-top: 5px;
+ }
+ 
+ .BF_drop a:hover{
+     background-color:  rgb(255, 97, 97);
+     border-radius: 5px;
+     padding: 5px;
+ }
+ 
+ #BF:hover .BF_drop{
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .electric_drop{
+     position:absolute;
+     background-color: rgb(247, 180, 180);
+     display: none;
+     padding: 15px;
+     
+     border-radius: 0px 0px 10px 10px;
+    
+    
+ }
+ 
+ .electric_drop a{
+     text-decoration: none;
+     color: black;
+     margin-top: 5px;
+ }
+ 
+ .electric_drop a:hover{
+     background-color:  rgb(255, 97, 97);
+     border-radius: 5px;
+     padding: 5px;
+ }
+ 
+ #electric:hover .electric_drop{
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ 
+ 
+ #lower>div:hover p{
+ color: rgb(255, 97, 97);
+ text-decoration: underline;
+ }
+
+ /* ---------------------------------------CART DATA------------------------------------------- */
+
+ /* #container{
+    display: flex;
+ }
+
+ #cartdiv>div{ 
+    display: flex;
+ } */
