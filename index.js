@@ -281,7 +281,7 @@ const PRODUCT_DATA = [
         numReviews: 150,
       },
       {
-        id: "men",
+        id: "mens",
         name: "Tommy Hilfiger Men's Leather Belt",
         price: "3999",
         catagory: "Accessories",
@@ -395,6 +395,47 @@ const PRODUCT_DATA = [
 
 
 let productdiv = document.getElementById("product")
+let filter = document.getElementById("filter_product")
+
+filter.addEventListener("change",function(){
+    if(filter.value == ""){
+        Display(PRODUCT_DATA);
+    }
+    else{
+        let filtered = PRODUCT_DATA.filter(function (element) {
+            if (element.id === filter.value) {
+                return true;
+            } else {
+                return false;
+            }
+        })
+        Display(filtered);
+    }
+    })
+
+    let search = document.getElementById("search")
+
+    search.addEventListener("input", function () {
+        let filtered = PRODUCT_DATA.filter(function (element) {
+            if (element.name.toUpperCase().includes(search.value.toUpperCase()) === true) {
+                return true;
+            }
+            else if (element.id.toUpperCase().includes(search.value.toUpperCase()) === true) {
+                return true;
+            }  
+            else  if (element.brand.toUpperCase().includes(search.value.toUpperCase()) === true) {
+                return true;
+            } 
+            else  if (element.catagory.toUpperCase().includes(search.value.toUpperCase()) === true) {
+                return true;
+            } 
+            
+            else {
+                return false;
+            }
+        })
+        Display(filtered);
+    })
 
 let CartData = localStorage.getItem("cartdata")
 
@@ -425,7 +466,7 @@ function Display(data){
         category.innerText = element.catagory
         addToCart.innerText = "Add to Cart"
         addToCart.addEventListener("click",()=>{
-            CartData.push(element);
+            CartData.push({...element,qnt : 1});
             localStorage.setItem("cartdata",JSON.stringify(CartData))
         })
        

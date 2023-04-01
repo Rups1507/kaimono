@@ -9,6 +9,34 @@ else{
     CartData = JSON.parse(CartData)
 }
 
+let search = document.getElementById("search")
+
+search.addEventListener("input", function () {
+    let filtered = CartData.filter(function (element) {
+        if (element.name.toUpperCase().includes(search.value.toUpperCase()) === true) {
+            return true;
+        }
+        else if (element.id.toUpperCase().includes(search.value.toUpperCase()) === true) {
+            return true;
+        }  
+        else  if (element.brand.toUpperCase().includes(search.value.toUpperCase()) === true) {
+            return true;
+        } 
+        else  if (element.catagory.toUpperCase().includes(search.value.toUpperCase()) === true) {
+            return true;
+        } 
+        
+        else {
+            return false;
+        }
+    })
+    Display(filtered);
+})
+
+
+
+let sum=0;
+
 let cartdiv = document.getElementById("cart_div")
 let pricediv = document.getElementById("Price_detail")
 Display(CartData);
@@ -21,15 +49,15 @@ data.forEach((element,i) => {
     let img = document.createElement("img");
     let name = document.createElement("h4");
     let price = document.createElement("h5");
-    let qnt = document.createElement("h6");
+    let qnt = document.createElement("h5");
     let inc = document.createElement("button")
     let dec =document.createElement("button");
     let rem = document.createElement("button")
 
     img.src = element.img;
     name.innerText=element.name;
-    price.innerText = `Price : ₹${element.price}`;
-    qnt.innerText = 1;
+    price.innerText = ` ₹${element.price}`;
+    qnt.innerText = element.qnt;
     inc.innerText = "+";
     dec.innerText = "-";
     rem.innerText = "Remove";
@@ -65,6 +93,21 @@ data.forEach((element,i) => {
     pro.append(imgdiv,detdiv)
 
     cartdiv.append(pro)
+
+    sum+= +element.price
+   
 });
 
+// let orderprice = document.getElementsByClassName("total")
+// let productprice = document.getElementsByClassName("productprice")
+// let discount = document.getElementsByClassName("discount")
+
+// let sum = 0;
+// for(let i=0;i<CartData.length;i++){
+//     sum+= Number(CartData[i].qnt) * Number(CartData[i].price) ;
+    
+// }
+// productprice.innerText = sum;
 }
+
+
