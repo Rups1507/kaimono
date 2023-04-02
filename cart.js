@@ -94,20 +94,22 @@ data.forEach((element,i) => {
 
     cartdiv.append(pro)
 
-    sum+= +element.price
+    // sum+= +element.price
+
+    let orderprice = document.getElementsByClassName("total")
+let productprice = document.getElementsByClassName("productprice")
+let discount = document.getElementsByClassName("discount")
+
+let sum = 0;
+for(let i=0;i<CartData.length;i++){
+    sum+= Number(CartData[i].qnt) * Number(CartData[i].price) ;
+    
+}
+productprice.innerText = sum;
    
 });
 
-// let orderprice = document.getElementsByClassName("total")
-// let productprice = document.getElementsByClassName("productprice")
-// let discount = document.getElementsByClassName("discount")
 
-// let sum = 0;
-// for(let i=0;i<CartData.length;i++){
-//     sum+= Number(CartData[i].qnt) * Number(CartData[i].price) ;
-    
-// }
-// productprice.innerText = sum;
 }
 
 
